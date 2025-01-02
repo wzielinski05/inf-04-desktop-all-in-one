@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 public class Home extends JFrame {
     private JPanel home;
     private JButton dodajPracownika;
+    private JButton nadajPrzesylkeButton;
 
     public Home() {
         setContentPane(home);
@@ -17,6 +18,12 @@ public class Home extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new DodajPracownika();
+            }
+        });
+        nadajPrzesylkeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new NadajPrzesylke();
             }
         });
     }

@@ -6,6 +6,7 @@ public class Home extends JFrame {
     private JPanel home;
     private JButton dodajPracownika;
     private JButton nadajPrzesylkeButton;
+    private JButton paszportButton;
 
     public Home() {
         setContentPane(home);
@@ -24,6 +25,12 @@ public class Home extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new NadajPrzesylke();
+            }
+        });
+        paszportButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Paszport();
             }
         });
     }
